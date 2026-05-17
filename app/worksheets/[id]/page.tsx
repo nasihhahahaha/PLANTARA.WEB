@@ -1,0 +1,2 @@
+import Link from 'next/link';import { worksheets } from '@/data/dummy';
+export default function Detail({params}:{params:{id:string}}){const w=worksheets.find(x=>x.id===params.id);if(!w)return <div className="card">Data kosong.</div>;return <div className="card space-y-2"><h1 className="text-2xl font-bold">{w.title}</h1><p>{w.materi}</p><p>Tema: {w.theme} | Level: {w.level}</p><p>Status: {w.status}</p><Link href={`/worksheets/${w.id}/submit`} className="bg-emerald-600 text-white px-3 py-2 rounded inline-block">Kerjakan Worksheet</Link></div>}

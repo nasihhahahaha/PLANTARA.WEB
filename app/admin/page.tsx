@@ -1,0 +1,2 @@
+import { fundingProjects, users, videos, worksheets } from '@/data/dummy';
+export default function Admin(){return <div className="space-y-4"><h1 className="text-2xl font-bold">Admin Panel</h1><div className="grid md:grid-cols-2 gap-4"><div className="card">Kelola Worksheet ({worksheets.length})</div><div className="card">Kelola Video ({videos.length})</div><div className="card">Semua Pengguna ({users.length})</div><div className="card">Semua Proposal ({fundingProjects.length})</div></div></div>}

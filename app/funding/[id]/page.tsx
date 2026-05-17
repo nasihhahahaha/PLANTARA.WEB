@@ -1,0 +1,2 @@
+import { fundingProjects } from '@/data/dummy';
+export default function Proposal({params}:{params:{id:string}}){const p=fundingProjects.find(x=>x.id===params.id);if(!p)return <div className="card">Not found</div>;return <div className="card"><h1 className="text-2xl font-bold">{p.title}</h1><p>{p.problem_description}</p><p>Status: {p.status}</p><p>Catatan Reviewer: {p.reviewer_notes}</p><div className="w-full h-2 bg-slate-200 rounded my-2"><div className="h-2 rounded bg-sky-500" style={{width:'65%'}}/></div></div>}

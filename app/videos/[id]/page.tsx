@@ -1,0 +1,2 @@
+import { videos } from '@/data/dummy';
+export default function Detail({params}:{params:{id:string}}){const v=videos.find(x=>x.id===params.id);if(!v)return <div className="card">Data tidak ada.</div>;return <div className="space-y-4"><h1 className="text-2xl font-bold">{v.title}</h1><iframe className="w-full aspect-video rounded" src={v.youtube} title={v.title}/><div className="card"><p>{v.description}</p><p>Alat & bahan: {v.tools}</p><p>Langkah: {v.steps}</p><button className="bg-emerald-600 text-white px-4 py-2 rounded mt-3">Mulai Project</button></div></div>}
