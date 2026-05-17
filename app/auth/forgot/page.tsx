@@ -1,0 +1,1 @@
+export default function Forgot(){return <div className='max-w-md mx-auto bg-white p-6 rounded-xl border'><h1 className='text-xl font-bold mb-3'>Lupa Password</h1><input className='border p-2 rounded w-full mb-2' placeholder='Email'/><button className='w-full bg-slate-700 text-white py-2 rounded'>Kirim Link Reset</button></div>}

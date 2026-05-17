@@ -1,0 +1,6 @@
+import { proposals } from '@/lib/dummy-data';
+import { Badge, Card, SectionTitle } from '@/components/ui';
+
+export default function FundingPage(){
+ return <div className='space-y-4'><SectionTitle title='Pengajuan Pendanaan Project' desc='Ajukan proposal dan pantau status review.'/><Card><h3 className='font-semibold mb-2'>Form Pengajuan Dana</h3><div className='grid md:grid-cols-2 gap-2'>{['Judul project','Nama pengaju','Sekolah / komunitas','Target dana'].map(x=><input key={x} placeholder={x} className='border p-2 rounded'/>)}</div><textarea placeholder='Deskripsi masalah lingkungan' className='border p-2 rounded w-full my-2'/><textarea placeholder='Solusi STEM yang ditawarkan' className='border p-2 rounded w-full my-2'/><input type='file' className='text-sm'/><button className='mt-3 px-4 py-2 bg-emerald-600 text-white rounded'>Simpan Draft / Ajukan</button></Card><SectionTitle title='Daftar Pengajuan Saya'/><div className='grid md:grid-cols-2 gap-3'>{proposals.map(p=><Card key={p.id}><div className='flex justify-between'><h4 className='font-semibold'>{p.title}</h4><Badge>{p.status}</Badge></div><p className='text-sm'>{p.objectives}</p><p className='text-xs'>Target: Rp{p.target_funding.toLocaleString('id-ID')}</p></Card>)}</div></div>
+}
