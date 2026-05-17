@@ -1,0 +1,1 @@
+export default function Login(){return <form className="card max-w-md mx-auto space-y-3"><h1 className="text-2xl font-bold">Login</h1><input className="border p-2 rounded w-full" placeholder="Email"/><input type="password" className="border p-2 rounded w-full" placeholder="Password"/><button className="bg-emerald-600 text-white px-4 py-2 rounded w-full">Masuk</button></form>}

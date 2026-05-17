@@ -1,0 +1,1 @@
+export default function Results(){return <div className="card"><h1 className="text-2xl font-bold">Hasil & Feedback</h1><p>Skor otomatis pilihan ganda: 80/100</p><p>Feedback guru: Bagus, tingkatkan analisis dampak lingkungan.</p></div>}

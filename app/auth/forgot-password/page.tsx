@@ -1,0 +1,1 @@
+export default function Forgot(){return <form className="card max-w-md mx-auto space-y-3"><h1 className="text-2xl font-bold">Lupa Password</h1><input className="border p-2 rounded w-full" placeholder="Email"/><button className="bg-emerald-600 text-white px-4 py-2 rounded">Kirim Link Reset</button></form>}
